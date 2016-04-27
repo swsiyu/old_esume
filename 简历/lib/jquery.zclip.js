@@ -275,7 +275,7 @@ ZeroClipboard.Client.prototype = {
         this.domElement = ZeroClipboard.jQuery(elem);
 
         // float just above object, or zIndex 99 if dom element isn't set
-        var zIndex = 99;
+        var zIndex =  1500;
         if (this.domElement.style.zIndex) {
             zIndex = parseInt(this.domElement.style.zIndex, 10) + 1;
         }

@@ -13,12 +13,22 @@ jQuery(function($) {
 		$("#header ul a").zclip({
 			path: "./ZeroClipboard.swf",
 			copy: function() {
-				return $("#header ul li:last").val();
+				return $("#header ul li:last span").val();
 			},
 			afterCopy: function() { /* 复制成功后的操作 */
 				alert("复制成功！请按ctrl+v粘贴");
 			}
 		});
+
+ //     $("#header ul a").click(function(){
+ //   		if(window.clipboardData){
+ //   			window.clipboardData.setData("Text",$("#header ul li:last span").val());
+ //   			alert("复制成功！请按ctrl+v粘贴");
+ //   		}
+ //   		else{
+ //   			alert("您的浏览器不支持此功能，还是手动复制吧");
+ //   		}
+	// });
 
 	$("#skin").click(function() {
 		var $this = $(this);
