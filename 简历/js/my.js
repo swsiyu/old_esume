@@ -11,9 +11,9 @@ jQuery(function($) {
 	}
 
 		$("#header ul a").zclip({
-			path: "./ZeroClipboard.swf",
+			path: "./js/ZeroClipboard.swf",
 			copy: function() {
-				return $("#header ul li:last span").val();
+				return $("#header ul li:last span").text();
 			},
 			afterCopy: function() { /* 复制成功后的操作 */
 				alert("复制成功！请按ctrl+v粘贴");
@@ -44,7 +44,6 @@ jQuery(function($) {
 			// $("#header ul li").unbind("mouseenter").unbind("mouseleave");
 			$("*").unbind("mouseenter").unbind("mouseleave");
 		} else if ($("#skin").data().style == "plain") {
-			// alert(123);
 			$("#skin").data().style = "cool";
 			$this.css("color", "green");
 			init();
