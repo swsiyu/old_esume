@@ -45,6 +45,13 @@ div{border-radius: 12px;width: auto;}
 	font-family: '楷体';
 
 }
+@media (max-width:720px){
+	#ZeroClipboardMovie_1{
+		display: none;
+		width: 0;
+		height: 0;
+	}
+}
 embed#ZeroClipboardMovie_1 {
     position: relative;
     top: -10px;
@@ -125,6 +132,12 @@ embed#ZeroClipboardMovie_1 {
 #content .rwd h2~*{
 	padding: 0px 20px;
 }
+
+#content .ps{
+  padding: 10px 20px;
+  padding-bottom: 0px;
+}
+
 #footer{
 	font-size: 14px;
 	font-family: '楷体';
